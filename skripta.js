@@ -48,8 +48,11 @@ window.addEventListener('load', function() {
 			vrednosti.push(barva.innerHTML);
 		}
 		
-		minCas = 1000;
-		maxCas = 1000;
+		var min = document.querySelector("#min");
+		var max = document.querySelector("#max");
+		
+		minCas = parseInt(min.value, 10);
+		maxCas = parseInt(max.value, 10);
 		spremeniBarvo(0);
 		
 		var start = document.querySelector("#start");
